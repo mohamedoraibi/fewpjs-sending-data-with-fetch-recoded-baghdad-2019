@@ -14,14 +14,12 @@ function submitData(name, email) {
 
 submitData("John","john@gmail.com")
 .then(res=>{
-  console.log("Mohamed"+json)
     return res.json()
 })
 .then(json =>{
   let elem=document.createElement("div");
   elem.innerHTML=js.id;
     document.body.appendChild(elem)
-    console.log("Mohamed"+json)
 }).catch(err=>{
     document.body.innerHTML=err.message;
 })
