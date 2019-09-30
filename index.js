@@ -20,6 +20,7 @@ submitData("John","john@gmail.com")
   let elem=document.createElement("div");
   elem.innerHTML=js.id;
     document.body.appendChild(elem)
+    console.log(json)
 }).catch(err=>{
     document.body.innerHTML=err.message;
 })
