@@ -1,9 +1,10 @@
+
 function submitData(name, email) {
     const URL='http://localhost:3000/users'
     const requestOptions={
         headers: {
-            'Content-Type' : 'application/json',
-            'Accepts' : 'application/json'
+            Accept: "application/json",
+            "Content-Type": "application/json"
         },
         method:"POST",
         body: JSON.stringify({name: name, email:email})
@@ -20,3 +21,4 @@ submitData("John","john@gmail.com")
 }).catch(err=>{
     document.body.innerHTML=err.message;
 })
+    
