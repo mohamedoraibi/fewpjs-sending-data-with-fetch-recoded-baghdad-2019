@@ -1,5 +1,12 @@
 
 function submitData(name, email) {
+const request
+
+
+
+
+
+
 
   let body=document.querySelector('body');
   body=[];
