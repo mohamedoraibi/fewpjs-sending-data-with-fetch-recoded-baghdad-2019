@@ -9,7 +9,7 @@ function submitData(name, email) {
         method:"POST",
         body: JSON.stringify({name: name, email:email})
     }
-    return fetch(url,requestOptions)
+    return fetch(URL,requestOptions)
 }
 
 submitData("John","john@gmail.com")
@@ -21,3 +21,5 @@ submitData("John","john@gmail.com")
 }).catch(err=>{
     document.body.innerHTML=err.message;
 })
+    
+    
