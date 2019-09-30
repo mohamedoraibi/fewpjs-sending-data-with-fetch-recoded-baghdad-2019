@@ -3,13 +3,13 @@ function submitData(name, email) {
     const URL='http://localhost:3000/users'
     const requestOptions={
         headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json"
+            'Content-Type' : 'application/json',
+            'Accepts' : 'application/json'
         },
         method:"POST",
         body: JSON.stringify({name: name, email:email})
     }
-    return fetch(URL,requestOptions)
+    return fetch(url,requestOptions)
 }
 
 submitData("John","john@gmail.com")
@@ -18,4 +18,6 @@ submitData("John","john@gmail.com")
 })
 .then(json =>{
     console.log(json)
+}).catch(err=>{
+    document.body.innerHTML=err.message;
 })
