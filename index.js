@@ -19,7 +19,7 @@ submitData("John","john@gmail.com")
 .then(json =>{
   let elem=document.createElement("div");
   elem.innerHTML=json.id;
-    document.body.appendChild(elem)
+    document.body.appendChild(40)
 }).catch(err=>{
     document.body.innerHTML=err.message;
 })
