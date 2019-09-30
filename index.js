@@ -1,4 +1,3 @@
-
 function submitData(name, email) {
     const URL='http://localhost:3000/users'
     const requestOptions={
@@ -17,9 +16,7 @@ submitData("John","john@gmail.com")
     return res.json()
 })
 .then(json =>{
-    console.log(json)
+    document.body.innerHTML=js._id_
 }).catch(err=>{
     document.body.innerHTML=err.message;
 })
-    
-    
