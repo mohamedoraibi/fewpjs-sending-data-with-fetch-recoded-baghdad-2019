@@ -27,8 +27,10 @@ fetch("http://localhost:3000/dogs", configObj)
 
 
 function submitData(name, email) {
+
   let body=document.querySelector('body');
   body=[];
+
   fetch("http://localhost:3000/users", {
     headers: {
       Accept: "application/json",
@@ -36,6 +38,7 @@ function submitData(name, email) {
     },
     method: "POST",
     body: JSON.stringify({ name: name, email: email })
+
   }).then(function(response) {
     return response.json();
   }).then(function(object) {
@@ -48,6 +51,8 @@ function submitData(name, email) {
 
   }).catch(function(error) {
     return error.message;
-  });
+  })
+  
+
 }
 
