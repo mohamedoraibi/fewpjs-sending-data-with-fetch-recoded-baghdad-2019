@@ -14,6 +14,7 @@ function submitData(name, email) {
 
 submitData("John","john@gmail.com")
 .then(res=>{
+  console.log("Mohamed"+json)
     return res.json()
 })
 .then(json =>{
